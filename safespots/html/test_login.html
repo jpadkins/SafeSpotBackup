@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login Page</title>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+	</head>
+	<body>
+		<h3>Sprint 1 Stuff</h3>
+		<form id="f_signup" method="POST">
+			First Name: <input type="text" name="fname">
+			<br/>
+			Last Name: <input type="text" name="lname">
+			<br/>
+			Username: <input type="text" name="uname">
+			<br/>
+			Password: <input type="password" name="psw">
+			<br/>
+			Email: <input type="email" name="eml">
+			<br/>
+			<button id="b_signup">Create</button>
+		</form>
+		<br/>
+		<form id="f_login" method="POST">
+			Username: <input type="text" name="uname">
+			<br/>
+			Password: <input type="password" name="psw">
+			<br/>
+			<button id="b_login">Login</button>
+			<button id="b_logout">Logout</button>
+		</form>
+		<br/>
+		<span id="s_user"></span><br/>
+		<span id="s_first"></span><br/>
+		<span id="s_last"></span><br/>
+		<span id="s_email"></span><br/>
+		<span id="s_pin"></span><br/>
+		<span id="s_timeout"></span><br/>
+		<h4>Update Field</h4>
+		New Value: <input type="text" id="update_field">
+		<select id="sel_update">
+			<option value="email">email</option>
+			<option value="pin">pin</option>
+			<option value="timeout">timeout</option>
+			<option value="password">password</option>
+		</select>
+		<button id="b_update">Update</button>
+		<br/><h3>Sprint 3-4 Stuff</h3>
+		<h4>Contacts</h4>
+		<form id="f_contacts" method="POST">
+			City: <input type="text" name="city">
+			<br/>
+			First Name: <input type="text" name="first">
+			<br/>
+			Last Name: <input type="text" name="last">
+			<br/>
+			Phone: <input type="text" name="phone">
+			<br/>
+			State: <input type="text" name="state">
+			<br/>
+			Street: <input type="text" name="street">
+			<br/>
+			Contacts List: <div id="d_contacts"></div><br/>
+			<button id="b_add_contact">Add Contact</button>
+			<button id="b_delete_contact">Delete Contact</button>
+			<button id="b_list_contact">List Contacts</button>
+		</form>
+		<h4>Safe Spots</h4>
+		<form id="f_spots" method="POST">
+			Name: <input type="text" name="name">
+			<br/>
+			latitude: <input type="text" name="lat">
+			<br/>
+			longitude: <input type="text" name="lng">
+			<br/>
+			Spots List: <div id="d_spots"></div><br/>
+			<button id="b_add_spot">Add SafeSpot</button>
+			<button id="b_delete_spot">Delete Safespot</button>
+			<button id="b_list_spot">List Safespots</button>
+		</form>
+		<h4>Crimes</h4>
+		<form id="f_crimes" method="POST">
+			Get Crimes Near: <input type="text" name="search">
+			<br/>
+			<button id="b_crimes">List Crimes in Console</button>
+		</form>
+	</body>
+</html>

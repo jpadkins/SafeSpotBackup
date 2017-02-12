@@ -1,0 +1,67 @@
+body {
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.logo {
+    height: 100px;
+    display: inline;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-right: 10px;
+}
+
+form {
+    float: right;
+    padding-top: 20px;
+}
+
+input {
+    height: 25px;
+    font-size: 14px;
+}
+
+.register {
+    position: relative;
+    margin-left: 310px;
+}
+
+.link {
+    color: slategrey;
+}
+
+.facts {
+    align-content: center;
+    position: fixed;
+    bottom: 0px;
+    margin-top: 100px;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.text {
+    position: relative;
+    top: 25px;
+    font-family: sans-serif;
+}
+
+#pin {
+    padding-right: 200px;
+    padding-left: 25px;
+}
+
+#phone {
+    padding-right: 15px;
+}
+
+#people {
+    padding-left: 100px;
+    padding-right: 30px;
+}
+

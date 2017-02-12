@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/acc_config.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="js/acc_config.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="acc_interface">
+    <div id="acc_mng_header"><h1>Account Management</h1></div>
+    <div id="acc_forms">
+        <div class="acc_form" id="ch_email">
+            <p><a>Change my e-mail</a></p>
+            <div id="email_form">
+                <form>
+                    <input type="text" id="new_email" value="" placeholder="New e-mail" required>
+                    <button class="b_submit" id="b_submit_email">Change e-mail</button>
+                </form>
+            </div>
+        </div>
+        <div class="acc_form" id="ch_PIN">
+            <p><a>Change my PIN</a></p>
+            <div  id="pin_form">
+                <form>
+                    <input type="text" id="new_pin" value="" placeholder="New PIN" required>
+                    <button class="b_submit" id="b_submit_pin">Change PIN</button>
+               </form>
+            </div>
+        </div>
+        <div class="acc_form" id="ch_pass">
+            <p><a>Change my Password</a></p>
+            <div id="pass_form">
+                <form>
+                <input type="text" id="new_pass" value="" placeholder="New Password" required>
+                <button class="b_submit" id="b_submit_pass">Change password</button>
+                </form>
+            </div>
+        </div>
+        <div id="ch_EC">
+            <p>My Emergency Contacts:</p>
+            <div id="show_EC">
+                <ul id="ec">
+                </ul>
+            </div>
+            <div id="b_addMoreEC">
+                <p>Add more Contacts</p>
+            </div>
+            <div id="add_EC_info">
+                <form id="new_EC">
+                <label for="EC_fname">First Name:</label>
+                <input type="text" class="f_add_EC" id="EC_fname" value="" placeholder="e.g. John" required>
+                <br>
+                <label for="EC_lname">Last Name:</label>
+                <input type="text" class="f_add_EC" id="EC_lname" value="" placeholder="e.g. Jackson" required>
+                <br>
+                <label for="EC_pnum">Phone number:</label>
+                <input type="text" class="f_add_EC" id="EC_pnum" value="" placeholder="e.g. 2140009999" required>
+                <br>
+                <label for="EC_fname">Street Address:</label>
+                <input type="text" class="f_add_EC" id="EC_street" value="" placeholder="e.g. Tomorrowland 2a" required>
+                <br>
+                <label for="EC_city">City:</label>
+                <input type="text" class="f_add_EC" id="EC_city" value="" placeholder="e.g. Hogwards" required>
+                <br>
+                <label for="EC_fname">State:</label>
+                <input type="text" class="f_add_EC" id="EC_state" value="" placeholder="e.g. Narnia" required>
+                <br>
+                <button id="add_ED">Add Emergency Contact</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

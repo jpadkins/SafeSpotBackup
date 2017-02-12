@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="js/sourceGmaps.js"></script>
+    <!--script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script-->
+    <script src="js/map.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/account_sidebar.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<body class="row">
+<div class="sidebar-left col-lg-2">
+		<img id=logo src="images/Logo.png">
+		<div class="sidebar-links">
+			<a class="link-darkblue" href="account_setting.html"><i class="fa fa-gear"></i>My Account</a>
+			<a class="link-medblue selected" href="account_safespots.html"><i class="fa fa-map-marker"></i>My Safe Spots</a>
+			<a class="link-darkteal" href="account_contacts.html"><i class="fa fa-group"></i>My Contacts</a>
+		
+		</div>
+	</div>
+	<script>
+		$(function () {
+			var links = $('.sidebar-links > a');
+			links.on('click', function () {
+				links.removeClass('selected');
+				$(this).addClass('selected');
+			})
+		});
+	</script>
+    <!--<div class="main-content">-->
+        <div class="mapColumn col-md-6">
+            <div id="map"></div>
+        </div>
+    <div class="rightColumn col-md-4">
+        <div id="text">
+            <div class="toggle_markers" id="toggle_markers">
+                <h3>Map Options</h3>
+                <label class="tab"><input type="checkbox" id="crimes" name="crimes" />Show Crime</label>
+                <label class="tab"><input type="checkbox" id="safespots" name="safespots" />Show Safespots</label>
+            </div>
+            <br>
+            <div id="s_address">
+                <h3>Find Location</h3>
+                <form>
+                    Enter Address: <input type="text" id="address" name="address">
+                    <br>
+                    <button type="button" id="b_address">Search Address</button>
+                </form>
+            </div>
+            <br>
+            <h3>Find Route</h3>
+            <form id="f_address">
+                Start: <input type="text" id="address1" name="address1">
+                <br>
+                End:  <input type="text" id="address2" name="address2">
+                <br>
+                <button type="button" id="b_route">Search Route</button>
+                <br>
+                <button type="button" id="b_route_safespot">Take Me To Safety</button>
+            <!--/form>
+            <form id="f_lnglat"-->
+            </form>
+            <div id="crime" style="height: 200px; overflow: scroll;">
+                <ul id="ul_crimes">
+
+                </ul>
+            </div>
+            <div id="instr">
+                <ul id="instructions">
+
+                </ul>
+            </div>
+
+            <!-- on click marker stuff-->
+            <div id="edit_marker_template">
+                <h4>{{address}}</h4>
+                <form class="edit_marker" action="#" method="post" data-marker-index="{{index}}">
+                    <div class="hidden">
+                        <p>
+                            <label for="marker_{{index}}_lat">Latitude:</label>
+                            <input type="text" id="marker_{{index}}_lat" value="{{lat}}" />
+                        </p>
+                        <p>
+                            <label for="marker_{{index}}_lng">Longitude:</label>
+                            <input type="text" id="marker_{{index}}_lng" value="{{lng}}" />
+                        </p>
+                    </div>
+                    <!--input type="submit" value="Update position" /-->
+                    <button type="button" id="make_safespot">Make it a safespot</button>
+
+                </form>
+                <button id="b_delete_marker" type="button">Delete Marker</button>
+            </div>
+
+            <div id="added_markers_list">
+                <h3>Markers</h3>
+                <ul id="markers-with-index"></ul>
+                <div class="hidden">
+                    <ul id="markers-with-coordinates"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--</div>-->
+</body>
+</html>

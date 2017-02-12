@@ -1,0 +1,48 @@
+body {
+    background-repeat: no-repeat;
+}
+
+.logo {
+    height: 100px;
+    display: inline;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-right: 10px;
+}
+
+form {
+    float: right;
+    padding-top: 20px;
+}
+
+input {
+    height: 25px;
+    font-size: 14px;
+}
+
+.facts {
+    padding-top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    position: relative;
+    top: 30px;
+    font-family: sans-serif
+}
+
+#pin {
+    padding-right: 200px;
+}
+
+#people {
+}
+
+#phone {
+    padding-left: 200px;
+}

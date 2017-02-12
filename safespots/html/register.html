@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>SafeSpots</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css\register.css">
+        <script src="js\jquery.min.js"></script>
+        <script src="js\register.js"></script>
+    </head>
+    <body background = "images\city2.jpg">
+        <div class="register-block">
+            <h1 id="regHead">Register</h1>
+            <form method="POST">
+                First Name: <span class="invalid" id="fnameSpan">Required</span>
+                <br>
+                <input id="fname" type="text" name="fname">
+                <br>
+                Last Name: <span class="invalid" id="lnameSpan">Required</span>
+                <br>
+                <input id="lname" type="text" name="lname">
+                <br>
+                Email: <span class="invalid" id="emailSpan">Valid Email Address</span>
+                <br>
+                <input id="email" type="text" name="eml">
+                <br>
+                Username: <span class="invalid" id="userSpan">Required</span>
+                <br>
+                <input id="username" type="text" name="uname">
+                <br>
+                Password: <span class="invalid" id="passSpan">8 - 40 characters</span>
+                <br>
+                <input id="password" type="password" name="pwd">
+                <br>
+                Confirm Password: <span class="invalid" id="confSpan">Passwords must match</span>
+                <br>
+                <input id="confirmation" type="password" name="PasswordConfirm">
+                <br><br>
+                <button id="submitButton" type="button">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

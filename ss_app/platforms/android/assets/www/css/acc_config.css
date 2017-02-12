@@ -1,0 +1,72 @@
+body{
+    position: relative;
+}
+
+#acc_interface{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+}
+
+#acc_mng_header{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#acc_interface > div{
+    border: solid;
+}
+
+#acc_forms > div{
+}
+
+#ec li{
+    position: relative;
+    float: left;
+}
+
+#ec > li + p{
+    color: red;
+}
+#ec p + p{
+    color: yellow;
+}
+
+#ec p:hover{
+    cursor: pointer;
+}
+
+li p{
+    position: relative;
+    float: left;
+    width: 100px;
+    display: inline;
+}
+#show_EC{
+    display: none
+}
+
+#add_EC_info{
+    position: relative;
+    width: 300px;
+    display:none;
+}
+
+.f_add_EC{
+    width: 100px;
+}
+
+#b_addMoreEC p{
+    color: blue;
+    text-underline-style: double;
+}
+
+
+#b_addMoreEC p:hover{
+    color: green;
+    cursor: pointer;
+    font-size: large;
+
+}
+

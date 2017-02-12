@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About The Safespot Team</title>
+	<link rel="stylesheet" type="text/css" href="css/acc_config.css">
+	<link rel="stylesheet" href="css/tech.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/acc_config.js" type="text/javascript"></script>
+</head>
+
+<body background = images/city2.jpg>
+	<div class="wrapper">
+	<aside class="sidebar-left">
+		<img id=logo src="images/Logo.png">
+		<div class="sidebar-links">
+			<a class="link-lightteal" href="index.html"><i class="fa fa-home"></i>Back to Homepage</a>
+			<a class="link-lightteal selected" href="about.html"><i class="fa fa-info-circle"></i>About Us</a>
+			<a class="link-lightteal" href="development.html"><i class="fa fa-users"></i>Development Details</a>
+			<a class="link-lightteal" href="technical-overview.html"><i class="fa fa-code"></i>Tech Specs</a>
+
+	</aside>
+	<div class="main-content">
+		<h1>About the Safespot Team</h1>
+		<p>SafeSpot gives users the ability to find a location where they will feel safe, such as police stations, fire stations, government buildings, or specified addresses. Additionally, the user can check summaries of crime in a specific location to judge their safety before entering the area. If the user does find themselves in a situation where they feel threatened, then they can use the app to get directions to their nearest safe place. The overall goal is safety, anytime and anywhere.</p>
+
+		<h2>Database Side</h2>
+		<div id="bio-holder">
+			<img id="bio" src="images/Jacob.jpg">
+			<h3>Jacob Adkins (Team Lead)</h3>
+			<p>Jacob is a 4th year Computer Science major. His focus was on cassandra and web scraping. He spends his free time either learning new libraries or enjoying the outdoors.</p>
+		</div>
+		<div id="bio-holder">
+			<img id="bio" src="images/Ashley.jpg">
+			<h3>Ashley Pancho</h3>
+			<p>Ashley is a 2nd year Computer Science with Game Development major. She assisted with mysql and php, making the front end work with the databases. In her free time, she likes to code video games. </p>
+		</div>
+		<div id="bio-holder">
+			<img id="bio" src="images/Emely.jpg">
+			<h3>Emely Villeda-Principe</h3>
+			<p>Emely is a 3rd year Creative Computation and Computer Science major. She worked primarily as an php assistant and editor for the pitch/presentation info. Emely really likes chocolate - you can probably find her munching on M&M’s as she works.</p>
+		</div>
+
+		<h2>GUI Side</h2>
+		<div id="bio-holder">
+			<img id="bio" src="images/Courtney.jpg">
+			<h3>Courtney Kent</h3>
+			<p>Courtney is a 3rd year Creative Computation and Computer Science major. She focused a lot of her time on the design of our project, as well as helping with the Google Maps API. Outside of class she can be seen at SMU sporting events with the Mustang Band.</p>
+		</div>
+		<div id="bio-holder">
+			<img id="bio" src="images/Ziga.jpg">
+			<h3>Ziga Cerkovnik</h3>
+			<p>Ziga is a 3rd year Computer Science major. He was in charge of Account page and Google Maps implementation. He is a member of SMU Swimming team.</p>
+		</div>
+		<div id="bio-holder">
+			<img id="bio" src="images/David.jpg">
+			<h3>David Kim</h3>
+			<p>David is a 3rd year Computer Science major on a software development track. He was responsible for the register page and primarily worked on the accompanying Safespot Android application. Outside of class, he likes to play the guitar and sing.</p>
+		</div>
+    </div>
+	<script>
+		$(function () {
+			var links = $('.sidebar-links > a');
+			links.on('click', function () {
+				links.removeClass('selected');
+				$(this).addClass('selected');
+			})
+		});
+	</script>
+	</div>
+</body>
+</html>

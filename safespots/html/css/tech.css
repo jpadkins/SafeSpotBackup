@@ -1,0 +1,195 @@
+/* The main content */
+
+.main-content {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 200px;
+	padding: 5px 50px;
+	color: black;
+	opacity: 1.0;
+}
+
+.wrapper {
+	min-height: 100vh;
+	width: 100%;
+	background-color: rgba(255,255,255,0.8);
+}
+
+/* The left sidebar */
+
+.sidebar-left {
+	font-family: Arial, Helvetica, sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #B8B8B8;
+	width: 200px;
+	height: 100%;
+	padding: 20px 0;
+}
+
+#logo {
+    height: 60px;
+    padding-left: 10px;
+}
+
+#wireframes {
+	width: 100%;
+	float: right;
+}
+
+#design {
+	width: 325px;
+	float: left;
+}
+
+#bio {
+	width: 100px;
+	margin-right: 10px;
+	float: left;
+}
+
+#bio-holder {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.sidebar-left .sidebar-links {
+	margin: 20px auto;
+}
+
+.sidebar-left .sidebar-links a {
+	display: block;
+	text-decoration: none;
+	margin: 0 auto 5px auto;
+	padding: 20px 0;
+	background-color: #D0D0D0;
+	text-align: center;
+	color:  rgb(38,34,98);
+	font-size: 12px;
+	font-weight: bold;
+	border-left-width: 2px;
+	border-left-style: solid;
+}
+
+.sidebar-left .sidebar-links a i.fa {
+	display: block;
+	font-size: 35px;
+	margin-bottom: 5px;
+}
+
+.sidebar-left .sidebar-links a.selected{
+	background-color: #ffffff;
+	color:  rgb(38,34,98);
+	font-size: 12px;
+	font-weight: bold;
+	cursor: default;
+}
+
+/* Link Colors */
+
+.sidebar-left .sidebar-links a.link-darkblue {
+	border-color: rgb(38,34,98);
+}
+.sidebar-left .sidebar-links a.link-darkblue i.fa {
+	color: rgb(38,34,98);
+}
+
+.sidebar-left .sidebar-links a.link-medblue {
+	border-color: rgb(28,117,188);
+}
+.sidebar-left .sidebar-links a.link-medblue i.fa {
+	color: rgb(28,117,188);
+}
+
+.sidebar-left .sidebar-links a.link-darkteal {
+	border-color: rgb(11, 127, 124)
+}
+.sidebar-left .sidebar-links a.link-darkteal i.fa {
+	color: rgb(11, 127, 124);
+}
+
+.sidebar-left .sidebar-links a.link-lightteal {
+	border-color: rgb(22, 192, 196);
+}
+.sidebar-left .sidebar-links a.link-lightteal i.fa {
+	color: rgb(22, 192, 196);
+}
+
+/* Making the sidebar responsive */
+
+@media (max-width: 900px) {
+
+	.main-content{
+		max-width: none;
+		padding: 40px 20px;
+		margin: 0 0 40px;
+	}
+
+	.sidebar-left {
+		width: auto;
+		height: auto;
+		position: inherit;
+		padding: 20px 0 0;
+	}
+
+	.sidebar-left .sidebar-links {
+		text-align: center;
+		margin: 20px auto 0;
+	}
+
+	.sidebar-left .sidebar-links a {
+		display: inline-block;
+		width: 100px;
+		margin: 0;
+		padding: 14px 0;
+		border-left: none;
+		border-top-width: 2px;
+		border-top-style: solid;
+	}
+
+}
+
+/* Mobile phone layout */
+
+@media (max-width: 450px) {
+
+	.sidebar-left {
+		padding: 20px 0;
+	}
+
+	.sidebar-left .sidebar-links {
+		text-align: center;
+		margin: 20px auto 0;
+	}
+
+	.sidebar-left .sidebar-links a {
+		display: block;
+		max-width: 240px;
+		width: auto;
+		vertical-align: middle;
+		text-align: left;
+		margin: 0 auto 5px;
+		padding: 10px 25px;
+		border-top: none;
+		border-left-width: 2px;
+		border-left-style: solid;
+	}
+
+	.sidebar-left .sidebar-links a i.fa {
+		display: inline-block;
+		font-size: 20px;
+		width: 20px;
+		margin: 0 20px 0 0;
+		vertical-align: middle;
+	}
+
+}
+
+/*	Removing margins and paddings from the body, so that
+    the sidebar takes the full height of the page */
+
+body {
+	margin: 0;
+	padding: 0;
+}

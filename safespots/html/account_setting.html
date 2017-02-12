@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Account</title>
+	<link rel="stylesheet" type="text/css" href="css/acc_config.css">
+	<link rel="stylesheet" href="css/account_sidebar.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/acc_config.js" type="text/javascript"></script>
+</head>
+
+<body background = images/city2.jpg>
+	<aside class="sidebar-left">
+		<img id=logo src="images/Logo.png">
+		<div class="sidebar-links">
+			<a class="link-darkblue selected" href="#"><i class="fa fa-gear"></i>My Account</a>
+			<a class="link-medblue" href="account_safespots.html"><i class="fa fa-map-marker"></i>My SafeSpots</a>
+			<a class="link-darkteal" href="account_contacts.html"><i class="fa fa-group"></i>My Contacts</a>
+
+		</div>
+	</aside>
+	<div class="main-content">
+		<div id="acc_interface">
+        <div id="acc_mng_header"><h1>Account Settings</h1></div>
+            <div id="acc_forms">
+                <div class="acc_form" id="ch_email">
+                    <p>E-mail</p>
+                    <div id="email_form">
+                        <form>
+                            <input type="text" id="new_email" value="" placeholder="New e-mail" required>
+                            <button class="b_submit" id="b_submit_email">Change e-mail</button>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <div class="acc_form" id="ch_PIN">
+                    <p>PIN</p>
+                    <div  id="pin_form">
+                        <form>
+                            <input type="text" id="new_pin" value="" placeholder="New PIN" required>
+                            <button class="b_submit" id="b_submit_pin">Change PIN</button>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <div class="acc_form" id="ch_pass">
+                    <p>Password</p>
+                    <div id="pass_form">
+                        <form>
+                            <input type="text" id="new_pass" value="" placeholder="New Password" required>
+                            <button class="b_submit" id="b_submit_pass">Change password</button>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <div class="acc_form" id="show_safespots">
+                        <p>My SafeSpots:</p>
+                        <br>
+                        <ul id="ul_safespots"></ul>
+                    </div>
+        </div>
+    </div>
+	<script>
+		$(function () {
+			var links = $('.sidebar-links > a');
+			links.on('click', function () {
+				links.removeClass('selected');
+				$(this).addClass('selected');
+			})
+		});
+	</script>
+</body>
+</html>
+
